@@ -19,6 +19,9 @@
    Filename: tss_styles.css
 
 */
+/* * {
+    border: 1px solid red;
+} */
 /* HTML and Body Styles */
 html {
     background-color: hsl(27, 72%, 72%);
@@ -78,9 +81,27 @@ nav {
 
 nav>ul {
     line-height: 2em;
+    list-style-type: none;
+    padding: 5px
 }
 
 /* List Styles */
+article#about_tss ul {
+    list-style-image: url('runicon.png');
+}
+
+article.syllabus ol {
+    list-style-type: upper-roman;
+}
+
+article.syllabus ol ol {
+    list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol {
+    list-style-type: decimal;
+}
+
 /* Footer Styles */
 body>footer address {
     background-color: rgb(222, 128, 60);
